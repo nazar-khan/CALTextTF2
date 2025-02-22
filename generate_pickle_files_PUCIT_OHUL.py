@@ -14,7 +14,7 @@ running_on_colab = True #False
 if running_on_colab == True:
   # Mount Google Drive
   from google.colab import drive
-  drive.mount('/content/drive')
+  drive.mount('/content/drive', force_remount=True)
 
   # Define paths
   zip_path = "/content/drive/MyDrive/PUCIT_OHUL_Dataset.zip"
