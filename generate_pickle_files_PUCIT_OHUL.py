@@ -13,11 +13,11 @@ import zipfile
 running_on_colab = True #False
 if running_on_colab == True:
   # Mount Google Drive
-  from google.colab import drive
-  drive.mount('/content/drive', force_remount=True)
+  #from google.colab import drive
+  #drive.mount('/content/drive', force_remount=True)
 
   # Define paths
-  zip_path = "/content/drive/MyDrive/PUCIT_OHUL_Dataset.zip"
+  zip_path = "/content/drive/My Drive/PUCIT_OHUL_Dataset.zip"
   dataset_folder = '/content/drive/My Drive/CALTextTF2/dataset/PUCIT_OHUL/'
 
   # Check if the dataset is already extracted
