@@ -948,7 +948,7 @@ class Model(tf.keras.Model):
         self.num_classes = classes
 
         # Learning rate and regularization parameters
-        self.lr = tf.Variable(0.001, trainable=False, dtype=tf.float32)
+        self.lr = 0.001 #tf.Variable(0.001, trainable=False, dtype=tf.float32)
         self.alpha_reg = tf.Variable(0.0, trainable=False, dtype=tf.float32)
 
         # Define Dense Encoder
