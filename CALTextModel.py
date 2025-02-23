@@ -976,7 +976,7 @@ class Model(tf.keras.Model):
         x, y, x_mask, y_mask = inputs
 
         # Encode input features
-        annotation, anno_mask = self.dense_encoder(x, x_mask, training) 
+        annotation, anno_mask = self.dense_encoder(x, x_mask, training=training) 
 
         # Compute loss
         loss = self.caltext.get_cost(annotation, y, anno_mask, y_mask, self.alpha_reg)
