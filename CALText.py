@@ -8,13 +8,19 @@ from CALTextModel import Model
 from compute_error import compute_cer_wer
 import numpy as np
 
+running_on_colab = True #False
+if running_on_colab == True:
+    prefix = '/content/drive/My Drive/CALTextTF2/'
+else:
+    prefix = ''
+
 # Directories
-results_folder = 'results/'
-model_folder = 'model/'
-checkpoints_folder = 'checkpoints/'
-data_folder = 'data/'
-log_dir = "./logs/"
-log_file = "training_log.txt"
+results_folder = prefix+'results/'
+model_folder = prefix+'model/'
+checkpoints_folder = prefix+'checkpoints/'
+data_folder = prefix+'data/'
+log_dir = prefix+"logs/"
+log_file = prefix+"training_log.txt"
 
 # Constants
 MAXIMAGESIZE = 500000
