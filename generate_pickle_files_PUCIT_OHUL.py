@@ -36,7 +36,8 @@ if running_on_colab == True:
 else:
   dataset_folder = '../PUCIT_OHUL/'
   data_folder= '../data/PUCIT_OHUL/'
-  if not os.path.isdir(data_folder):
+
+if not os.path.isdir(data_folder):
     os.makedirs(data_folder)
 
 #This function makes a dictionary/vocabulary of all the unique characters in the labels file along with uniquely assigned numeric values to each different character.      
