@@ -34,8 +34,8 @@ if running_on_colab == True:
   #dataset_folder = '/gdrive/My Drive/CALTex/dataset/PUCIT_OHUL/'
   #data_folder= '/gdrive/My Drive/CALTex/data/PUCIT_OHUL/'
 else:
-  dataset_folder = '../PUCIT_OHUL/'
-  data_folder= '../data/PUCIT_OHUL/'
+  dataset_folder = 'PUCIT_OHUL/'
+  data_folder= 'data/PUCIT_OHUL/'
 
 if not os.path.isdir(data_folder):
     os.makedirs(data_folder)
